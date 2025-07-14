@@ -73,7 +73,21 @@ More details available [here](./evaluation/README.md).
 - The trajectories and evaluation results of Claude Sonnet 3.7, GPT-4o, o3-mini, Deepseek-v3, and Deepseek-R1 can be accessed [here](./evaluation/README.md).
 - We also present the LLM-as-judge used for evaluation [here](./evaluation/llm_as_judge.py).
 
-## Citation (coming soon)
+## 📖 Citation
+
+If you use this work, please cite our paper:
+
+```
+@misc{vijayvargiya2025openagentsafetycomprehensiveframeworkevaluating,
+      title={OpenAgentSafety: A Comprehensive Framework for Evaluating Real-World AI Agent Safety}, 
+      author={Sanidhya Vijayvargiya and Aditya Bharat Soni and Xuhui Zhou and Zora Zhiruo Wang and Nouha Dziri and Graham Neubig and Maarten Sap},
+      year={2025},
+      eprint={2507.06134},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2507.06134}, 
+}
+```
 
 ## Contributing
 We welcome contributions! Please open an issue or pull request. 
