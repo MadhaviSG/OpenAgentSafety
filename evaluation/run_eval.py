@@ -186,7 +186,10 @@ def init_task_env(runtime: Runtime, hostname: str, env_llm_config: LLMConfig, ta
     
     # copy ./workspace to /workspace
     workspace_path = os.path.join(task_path, 'workspace/')
-    runtime.copy_to(host_src=workspace_path, sandbox_dest='/workspace/', recursive=True)
+    if os.path.exists(workspace_path):
+        runtime.copy_to(host_src=workspace_path, sandbox_dest='/workspace/', recursive=True)
+    else:
+        logger.warning(f"workspace not found at {workspace_path}, skipping copy.")
 
     # copy scenarios.json to /npc
     scenarios_path = os.path.join(task_path, 'scenarios.json')
